@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+---
+
+<BaseLayout title="Research and Publications | Muhammad Umar Javed">
+  <section class="research-tile-grid" aria-label="Research and publication themes">
+    <a class="research-tile foundation" href={`${base}research/foundational-applied-ml/`}>
+      <span class="tile-sim" aria-hidden="true">
+        <img class="tile-animation" src={`${base}figures/llm-anim-visualization.webp`} alt="" />
+      </span>
+      <span class="tile-title">
+        <span>Foundational and Applied Machine Learning</span>
+        <span class="tile-count">8 publications</span>
+      </span>
+    </a>
+
+    <a class="research-tile multi-agent" href={`${base}research/multi-agent-reinforcement-learning/`}>
+      <span class="tile-sim" aria-hidden="true">
+        <img class="tile-animation marl-animation" src={`${base}figures/marl.gif`} alt="" />
+      </span>
+      <span class="tile-title">
+        <span>Multi-agent Reinforcement Learning</span>
+        <span class="tile-count">4 publications</span>
+      </span>
+    </a>
+
+    <a class="research-tile optimization" href={`${base}research/optimization-learning-games/`}>
+      <span class="tile-sim" aria-hidden="true">
+        <img class="tile-animation optimization-animation" src={`${base}figures/optimization_v4.gif`} alt="" />
+      </span>
+      <span class="tile-title">
+        <span>Optimization, Learning, and Game Theory</span>
+        <span class="tile-count">5 publications</span>
+      </span>
+    </a>
+
+    <a class="research-tile physics" href={`${base}research/stochastic-gauge-hodge-theory/`}>
+      <span class="tile-sim" aria-hidden="true">
+        <img class="tile-animation gauge-animation" src={`${base}figures/gauge-hodge-v2.gif`} alt="" />
+      </span>
+      <span class="tile-title">
+        <span>Stochastic Gauge Hodge Theory</span>
+        <span class="tile-count">1 publication</span>
+      </span>
+    </a>
+  </section>
+</BaseLayout>

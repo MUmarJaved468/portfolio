@@ -1,0 +1,41 @@
+---
+import '../styles/global.css';
+
+const {
+  title = 'Muhammad Umar Javed',
+  description = 'Research portfolio for Muhammad Umar Javed, with work across applied AI systems, machine learning, multi-agent systems, networked dynamical systems, and mathematical physics.'
+} = Astro.props;
+
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const navItems = [
+  ['Home', ''],
+  ['Research and Publications', 'research/'],
+  ['Education and Skills', 'education-skills/'],
+  ['Service and Awards', 'service/']
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href={base}>Muhammad Umar Javed</a>
+      <nav aria-label="Primary navigation">
+        {navItems.map(([label, href]) => (
+          <a href={`${base}${href}`}>{label}</a>
+        ))}
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>
