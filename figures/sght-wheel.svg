@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 680" role="img" aria-label="Conceptual figure for stochastic gauge Hodge theory">
+  <rect width="900" height="680" fill="#fbfaf6"/>
+  <g transform="translate(450 338)">
+    <circle r="176" fill="#fff" stroke="#d9d6cb" stroke-width="2"/>
+    <circle r="74" fill="#eef3ef" stroke="#2f6557" stroke-width="3"/>
+    <text text-anchor="middle" y="-10" font-family="Georgia, serif" font-size="30" fill="#1f2623">Visible</text>
+    <text text-anchor="middle" y="28" font-family="Georgia, serif" font-size="30" fill="#1f2623">Structure</text>
+    <g stroke="#2f6557" stroke-width="3" fill="none">
+      <path d="M0,-74 0,-176"/>
+      <path d="M64,-37 152,-88"/>
+      <path d="M64,37 152,88"/>
+      <path d="M0,74 0,176"/>
+      <path d="M-64,37 -152,88"/>
+      <path d="M-64,-37 -152,-88"/>
+    </g>
+    <g fill="#fff" stroke="#6f4c2f" stroke-width="2">
+      <circle cx="0" cy="-208" r="72"/>
+      <circle cx="180" cy="-104" r="72"/>
+      <circle cx="180" cy="104" r="72"/>
+      <circle cx="0" cy="208" r="72"/>
+      <circle cx="-180" cy="104" r="72"/>
+      <circle cx="-180" cy="-104" r="72"/>
+    </g>
+    <g font-family="Inter, Arial, sans-serif" font-size="20" fill="#1f2623" text-anchor="middle">
+      <text y="-214">Random</text><text y="-188">Spaces</text>
+      <text x="180" y="-110">Gauge</text><text x="180" y="-84">Transport</text>
+      <text x="180" y="98">Twisted</text><text x="180" y="124">Hodge Theory</text>
+      <text y="202">Harmonic</text><text y="228">Compression</text>
+      <text x="-180" y="98">Visibility</text><text x="-180" y="124">Maps</text>
+      <text x="-180" y="-110">Rigidity</text><text x="-180" y="-84">Questions</text>
+    </g>
+  </g>
+</svg>
